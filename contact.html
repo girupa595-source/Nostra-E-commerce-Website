@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Nostra</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="offer-bar">SALE IS LIVE! UP TO 50% OFF</div>
+
+    <header class="navbar">
+        <a href="index.html" class="logo">NOSTRA<span>.</span></a>
+        <button class="menu-toggle" id="menu-toggle"
+            aria-label="Toggle navigation">☰</button>
+        <nav id="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="collection.html">Collection</a>
+            <a class="active" href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="page-banner">
+        <p class="eyebrow">WE'RE HERE TO HELP</p>
+        <h1>Let's talk style.</h1>
+        <p>Questions, feedback, or just saying hello? Send us a message.</p>
+    </section>
+
+    <main class="contact-container">
+        <div class="contact-info">
+            <h2>Get in touch.</h2>
+            <p>Have a question about our collection? We'd love to hear from you.</p>
+            <p><strong>Email:</strong> hello@nostra.example</p>
+            <p><strong>Hours:</strong> Monday–Saturday, 10 AM–6 PM</p>
+        </div>
+
+        <form id="contact-form" class="contact-form">
+            <label for="name">Full name</label>
+            <input type="text" id="name" required placeholder="Your name">
+
+            <label for="email">Email address</label>
+            <input type="email" id="email" required placeholder="you@example.com">
+
+            <label for="subject">Subject</label>
+            <select id="subject" required>
+                <option value="">Choose a topic</option>
+                <option>Product enquiry</option>
+                <option>Order support</option>
+                <option>Returns and exchanges</option>
+                <option>Other</option>
+            </select>
+
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" required placeholder="Write your message..."></textarea>
+
+            <button type="submit" class="btn">SEND MESSAGE →</button>
+            <p id="contact-feedback" aria-live="polite"></p>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <a href="index.html" class="logo">NOSTRA<span>.</span></a>
+        <p>© 2026 Nostra. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
